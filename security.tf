@@ -57,7 +57,7 @@ resource "nsxt_policy_security_policy" "fin_policy1" {
     display_name       = "deny all outgoing traffic"
     source_groups      = [nsxt_policy_group.fin_group.path]
     destination_groups = []
-    action             = "ALLOW"
+    action             = "DROP"
     services           = []
     logged             = true
   }
